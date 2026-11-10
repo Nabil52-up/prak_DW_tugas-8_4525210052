@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Registrasi Event</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <main class="container">
+        <section class="form-card">
+            <header class="form-header">
+                <h1>Registrasi Event</h1>
+                <p>Silakan lengkapi formulir untuk mendaftar event.</p>
+            </header>
+
+            <form action="#" method="post" enctype="multipart/form-data">
+                <div class="form-group">
+                    <label for="nama">Nama Lengkap</label>
+                    <input type="text" id="nama" name="nama"
+                           placeholder="Masukkan nama lengkap"
+                           minlength="3" maxlength="50" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Alamat Email</label>
+                    <input type="email" id="email" name="email"
+                           placeholder="contoh@email.com" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="telepon">Nomor Telepon</label>
+                    <input type="tel" id="telepon" name="telepon"
+                           placeholder="08xxxxxxxxxx"
+                           pattern="[0-9]{10,13}"
+                           title="Nomor telepon harus terdiri dari 10 sampai 13 angka."
+                           required>
+                </div>
+
+                <div class="form-group">
+                    <label>Kategori Peserta</label>
+                    <div class="option-group">
+                        <label><input type="radio" name="kategori" value="Mahasiswa" required> Mahasiswa</label>
+                        <label><input type="radio" name="kategori" value="Pelajar"> Pelajar</label>
+                        <label><input type="radio" name="kategori" value="Umum"> Umum</label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label>Fasilitas Tambahan</label>
+                    <div class="option-group">
+                        <label><input type="checkbox" name="fasilitas" value="Sertifikat"> E-Sertifikat</label>
+                        <label><input type="checkbox" name="fasilitas" value="Snack"> Snack</label>
+                        <label><input type="checkbox" name="fasilitas" value="Modul"> Modul Materi</label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="event">Pilih Jenis Event</label>
+                    <select id="event" name="event" required>
+                        <option value="">-- Pilih Event --</option>
+                        <option value="Seminar Teknologi">Seminar Teknologi</option>
+                        <option value="Workshop Programming">Workshop Programming</option>
+                        <option value="Web Design">Web Design</option>
+                        <option value="Digital Marketing">Digital Marketing</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="alasan">Alasan Mengikuti Event</label>
+                    <textarea id="alasan" name="alasan" rows="5"
+                              minlength="10" maxlength="250"
+                              placeholder="Tuliskan alasan kamu mengikuti event..."
+                              required></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="bukti">Upload Bukti atau Dokumen</label>
+                    <input type="file" id="bukti" name="bukti"
+                           accept=".jpg,.jpeg,.png,.pdf" required>
+                    <small>Format file: JPG, PNG, atau PDF.</small>
+                </div>
+
+                <div class="agreement">
+                    <label>
+                        <input type="checkbox" name="persetujuan" value="setuju" required>
+                        Saya menyetujui ketentuan pendaftaran event.
+                    </label>
+                </div>
+
+                <div class="button-group">
+                    <button type="submit" class="btn-submit">Daftar Sekarang</button>
+                    <button type="reset" class="btn-reset">Reset Form</button>
+                </div>
+            </form>
+
+            <footer>
+                <p>© 2026 Registrasi Event | Formulir Pendaftaran</p>
+            </footer>
+        </section>
+    </main>
+</body>
+</html>
