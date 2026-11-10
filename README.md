@@ -7,12 +7,6 @@ Project formulir registrasi event menggunakan HTML dan CSS.
 - `index.html` — struktur dan elemen formulir.
 - `css/style.css` — desain, tata letak, dan tampilan responsif.
 
-## Cara Menjalankan
-
-1. Ekstrak file ZIP.
-2. Buka folder `Registrasi-Event`.
-3. Buka file `index.html` menggunakan browser.
-
 ## Komponen Form
 
 - Input nama, email, dan nomor telepon.
